@@ -1,0 +1,13 @@
+D:\Dreambook\Dreambook\bin\Debug\Dreambook.exe.config
+D:\Dreambook\Dreambook\bin\Debug\Dreambook.exe
+D:\Dreambook\Dreambook\bin\Debug\Dreambook.pdb
+D:\Dreambook\Dreambook\bin\Debug\EntityFramework.dll
+D:\Dreambook\Dreambook\bin\Debug\EntityFramework.SqlServer.dll
+D:\Dreambook\Dreambook\bin\Debug\EntityFramework.xml
+D:\Dreambook\Dreambook\bin\Debug\EntityFramework.SqlServer.xml
+D:\Dreambook\Dreambook\obj\Debug\Dreambook.csprojResolveAssemblyReference.cache
+D:\Dreambook\Dreambook\obj\Debug\Dreambook.Dreambook.resources
+D:\Dreambook\Dreambook\obj\Debug\Dreambook.Properties.Resources.resources
+D:\Dreambook\Dreambook\obj\Debug\Dreambook.csproj.GenerateResource.Cache
+D:\Dreambook\Dreambook\obj\Debug\Dreambook.exe
+D:\Dreambook\Dreambook\obj\Debug\Dreambook.pdb
