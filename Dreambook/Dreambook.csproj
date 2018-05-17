@@ -56,6 +56,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Asset Function\AddDream.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Asset Function\AddDream.Designer.cs">
+      <DependentUpon>AddDream.cs</DependentUpon>
+    </Compile>
     <Compile Include="DList.cs">
       <DependentUpon>Dreambk.tt</DependentUpon>
     </Compile>
@@ -88,6 +94,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Asset Function\AddDream.resx">
+      <DependentUpon>AddDream.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dreambook.resx">
       <DependentUpon>Dreambook.cs</DependentUpon>
     </EmbeddedResource>

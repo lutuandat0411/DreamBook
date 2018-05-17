@@ -24,21 +24,21 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="DreamDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="DreamDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="DLists" EntityType="DreamDBModel.DList" />
+        </EntityContainer>
         <EntityType Name="DList">
           <Key>
             <PropertyRef Name="idDream" />
           </Key>
           <Property Name="idDream" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Target" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="DateExpired" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="Splitphase" Type="Int32" Nullable="false" />
-          <Property Name="Status" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Target" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Status" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
         </EntityType>
-        <EntityContainer Name="DreamDBEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="DLists" EntityType="Self.DList" />
-        </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -48,13 +48,13 @@
           <EntitySetMapping Name="DLists">
             <EntityTypeMapping TypeName="DreamDBModel.DList">
               <MappingFragment StoreEntitySet="DList">
-                <ScalarProperty Name="Target" ColumnName="Target" />
-                <ScalarProperty Name="idDream" ColumnName="idDream" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
-                <ScalarProperty Name="DateExpired" ColumnName="DateExpired" />
-                <ScalarProperty Name="Splitphase" ColumnName="Splitphase" />
                 <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Splitphase" ColumnName="Splitphase" />
+                <ScalarProperty Name="DateExpired" ColumnName="DateExpired" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="Target" ColumnName="Target" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="idDream" ColumnName="idDream" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

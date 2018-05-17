@@ -4,13 +4,13 @@
     <EntitySetMapping Name="DLists">
       <EntityTypeMapping TypeName="DreamDBModel.DList">
         <MappingFragment StoreEntitySet="DList">
-          <ScalarProperty Name="Target" ColumnName="Target" />
-          <ScalarProperty Name="idDream" ColumnName="idDream" />
-          <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
-          <ScalarProperty Name="DateExpired" ColumnName="DateExpired" />
-          <ScalarProperty Name="Splitphase" ColumnName="Splitphase" />
           <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Splitphase" ColumnName="Splitphase" />
+          <ScalarProperty Name="DateExpired" ColumnName="DateExpired" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="Target" ColumnName="Target" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="idDream" ColumnName="idDream" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

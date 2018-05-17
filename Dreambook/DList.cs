@@ -16,10 +16,10 @@ namespace Dreambook
     {
         public int idDream { get; set; }
         public string Name { get; set; }
+        public string Target { get; set; }
         public System.DateTime DateCreated { get; set; }
         public System.DateTime DateExpired { get; set; }
         public int Splitphase { get; set; }
         public string Status { get; set; }
-        public string Target { get; set; }
     }
 }

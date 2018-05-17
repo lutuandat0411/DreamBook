@@ -34,13 +34,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtTarget = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateTPBegin = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTPExpired = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.btnbtnAdd = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.txtSplit = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -97,12 +97,12 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "Date Begin:";
             // 
-            // dateTimePicker1
+            // dateTPBegin
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(94, 129);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 6;
+            this.dateTPBegin.Location = new System.Drawing.Point(94, 129);
+            this.dateTPBegin.Name = "dateTPBegin";
+            this.dateTPBegin.Size = new System.Drawing.Size(200, 20);
+            this.dateTPBegin.TabIndex = 6;
             // 
             // label5
             // 
@@ -114,12 +114,12 @@
             this.label5.TabIndex = 7;
             this.label5.Text = "Date Expired:";
             // 
-            // dateTimePicker2
+            // dateTPExpired
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(94, 164);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker2.TabIndex = 8;
+            this.dateTPExpired.Location = new System.Drawing.Point(94, 164);
+            this.dateTPExpired.Name = "dateTPExpired";
+            this.dateTPExpired.Size = new System.Drawing.Size(200, 20);
+            this.dateTPExpired.TabIndex = 8;
             // 
             // label6
             // 
@@ -130,16 +130,6 @@
             this.label6.Size = new System.Drawing.Size(73, 15);
             this.label6.TabIndex = 9;
             this.label6.Text = "Split Phase:";
-            // 
-            // listBox1
-            // 
-            this.listBox1.DisplayMember = "1";
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(94, 198);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 30);
-            this.listBox1.TabIndex = 10;
-            this.listBox1.ValueMember = "4";
             // 
             // btnbtnAdd
             // 
@@ -159,19 +149,27 @@
             this.btnCancel.TabIndex = 12;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // txtSplit
+            // 
+            this.txtSplit.Location = new System.Drawing.Point(94, 198);
+            this.txtSplit.Name = "txtSplit";
+            this.txtSplit.Size = new System.Drawing.Size(138, 20);
+            this.txtSplit.TabIndex = 13;
             // 
             // AddDream
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(315, 290);
+            this.Controls.Add(this.txtSplit);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnbtnAdd);
-            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.dateTPExpired);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dateTPBegin);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtTarget);
             this.Controls.Add(this.label3);
@@ -193,12 +191,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtTarget;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTPBegin;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dateTPExpired;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button btnbtnAdd;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.TextBox txtSplit;
     }
 }
