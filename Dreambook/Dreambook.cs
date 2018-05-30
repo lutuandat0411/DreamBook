@@ -64,7 +64,17 @@ namespace Dreambook
             {
                 var row = this.dtManage.SelectedRows[0];
                 var item = (DList)row.DataBoundItem;
+
+
+                tabControl1.SelectTab(tabDetail);
+                this.ShowDreamList();
             }
+        }
+
+        private void btnbtnBack_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectTab(tabHome);
         }
     }
 }
+
