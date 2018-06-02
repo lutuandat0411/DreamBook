@@ -62,6 +62,12 @@
     <Compile Include="Asset Function\AddDream.Designer.cs">
       <DependentUpon>AddDream.cs</DependentUpon>
     </Compile>
+    <Compile Include="Asset Function\EditDream.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Asset Function\EditDream.Designer.cs">
+      <DependentUpon>EditDream.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dreambook.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Asset Function\AddDream.resx">
       <DependentUpon>AddDream.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Asset Function\EditDream.resx">
+      <DependentUpon>EditDream.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dreambook.resx">
       <DependentUpon>Dreambook.cs</DependentUpon>

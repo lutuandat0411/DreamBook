@@ -13,7 +13,7 @@ namespace Dreambook
 {
     public partial class Dreambook : Form
     {
-        private DreamList DreamList;
+        
         public Dreambook()
         {
             InitializeComponent();
@@ -23,17 +23,13 @@ namespace Dreambook
         {
             var db = new DreamDBEntities1();
             this.dtManage.DataSource = db.DreamLists.ToList();
+            this.dtManage.Columns["idDream"].Visible = false;
+            this.dtManage.Columns["status"].Visible = false;
         }
 
         private void Dreambook_Load(object sender, EventArgs e, DreamList DreamList)
         {
-            this.DreamList = DreamList;
             this.ShowDreamList();
-            DreamDBEntities1 db = new DreamDBEntities1();
-            txtName.Text = DreamList.Name;
-            txtTarget.Text = DreamList.Target;
-            dTPDateCrt.Value = DreamList.DateCreated.Value;
-
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -73,15 +69,16 @@ namespace Dreambook
                 var row = this.dtManage.SelectedRows[0];
                 var item = (DreamList)row.DataBoundItem;
 
-
+                var form = new EditDream(item);
+                form.ShowDialog();
                 tabControl1.SelectTab(tabDetail);
                 this.ShowDreamList();
             }
         }
 
-        private void btnbtnBack_Click(object sender, EventArgs e)
+        private object EditDream(DreamList item)
         {
-            tabControl1.SelectTab(tabHome);
+            throw new NotImplementedException();
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)
