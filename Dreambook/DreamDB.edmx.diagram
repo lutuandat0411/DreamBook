@@ -4,8 +4,8 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="6765b6dc49a045cc906a5f65cbd74ac7" Name="Diagram1">
-        <EntityTypeShape EntityType="DreamDBModel.DList" Width="1.5" PointX="0.75" PointY="0.75" />
+      <Diagram DiagramId="63727c3074b04abeb4762ba37163ddb3" Name="Diagram1">
+        <EntityTypeShape EntityType="DreamDBModel.DreamList" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

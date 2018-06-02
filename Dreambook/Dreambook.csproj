@@ -62,29 +62,29 @@
     <Compile Include="Asset Function\AddDream.Designer.cs">
       <DependentUpon>AddDream.cs</DependentUpon>
     </Compile>
-    <Compile Include="DList.cs">
-      <DependentUpon>Dreambk.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Dreambk.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Dreambk.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Dreambk.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Dreambk.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Dreambk.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Dreambk.edmx</DependentUpon>
-    </Compile>
     <Compile Include="Dreambook.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Dreambook.Designer.cs">
       <DependentUpon>Dreambook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DreamDB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DreamDB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DreamDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DreamDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DreamDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DreamDB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DreamList.cs">
+      <DependentUpon>DreamDB.tt</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -109,22 +109,22 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EntityDeploy Include="Dreambk.edmx">
+    <EntityDeploy Include="DreamDB.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Dreambk.Designer.cs</LastGenOutput>
+      <LastGenOutput>DreamDB.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Dreambk.Context.tt">
+    <None Include="DreamDB.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Dreambk.edmx</DependentUpon>
-      <LastGenOutput>Dreambk.Context.cs</LastGenOutput>
+      <DependentUpon>DreamDB.edmx</DependentUpon>
+      <LastGenOutput>DreamDB.Context.cs</LastGenOutput>
     </None>
-    <None Include="Dreambk.edmx.diagram">
-      <DependentUpon>Dreambk.edmx</DependentUpon>
+    <None Include="DreamDB.edmx.diagram">
+      <DependentUpon>DreamDB.edmx</DependentUpon>
     </None>
-    <None Include="Dreambk.tt">
+    <None Include="DreamDB.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Dreambk.edmx</DependentUpon>
-      <LastGenOutput>Dreambk.cs</LastGenOutput>
+      <DependentUpon>DreamDB.edmx</DependentUpon>
+      <LastGenOutput>DreamDB.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

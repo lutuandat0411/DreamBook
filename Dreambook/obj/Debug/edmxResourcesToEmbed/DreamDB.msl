@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DreamDBModelStoreContainer" CdmEntityContainer="DreamDBEntities1">
+    <EntitySetMapping Name="DreamLists">
+      <EntityTypeMapping TypeName="DreamDBModel.DreamList">
+        <MappingFragment StoreEntitySet="DreamList">
+          <ScalarProperty Name="idDream" ColumnName="idDream" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Target" ColumnName="Target" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="DateExpired" ColumnName="DateExpired" />
+          <ScalarProperty Name="Splitphase" ColumnName="Splitphase" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

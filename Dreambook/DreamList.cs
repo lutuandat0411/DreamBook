@@ -12,12 +12,12 @@ namespace Dreambook
     using System;
     using System.Collections.Generic;
     
-    public partial class DList
+    public partial class DreamList
     {
         public int idDream { get; set; }
         public string Name { get; set; }
         public string Target { get; set; }
-        public System.DateTime DateCreated { get; set; }
+        public Nullable<System.DateTime> DateCreated { get; set; }
         public System.DateTime DateExpired { get; set; }
         public int Splitphase { get; set; }
         public string Status { get; set; }

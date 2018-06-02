@@ -13,10 +13,10 @@ namespace Dreambook
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class DreamDBEntities : DbContext
+    public partial class DreamDBEntities1 : DbContext
     {
-        public DreamDBEntities()
-            : base("name=DreamDBEntities")
+        public DreamDBEntities1()
+            : base("name=DreamDBEntities1")
         {
         }
     
@@ -25,6 +25,6 @@ namespace Dreambook
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<DList> DLists { get; set; }
+        public virtual DbSet<DreamList> DreamLists { get; set; }
     }
 }

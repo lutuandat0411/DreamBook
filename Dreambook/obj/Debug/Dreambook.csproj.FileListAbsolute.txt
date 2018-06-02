@@ -28,3 +28,17 @@ G:\Dreambook\Dreambook\obj\Debug\Dreambook.csproj.CoreCompileInputs.cache
 G:\Dreambook\Dreambook\obj\Debug\Dreambook.csproj.CopyComplete
 G:\Dreambook\Dreambook\obj\Debug\Dreambook.exe
 G:\Dreambook\Dreambook\obj\Debug\Dreambook.pdb
+E:\Dreambook\Dreambook\bin\Debug\Dreambook.exe.config
+E:\Dreambook\Dreambook\obj\Debug\Dreambook.exe
+E:\Dreambook\Dreambook\obj\Debug\Dreambook.pdb
+E:\Dreambook\Dreambook\bin\Debug\Dreambook.exe
+E:\Dreambook\Dreambook\bin\Debug\Dreambook.pdb
+E:\Dreambook\Dreambook\bin\Debug\EntityFramework.dll
+E:\Dreambook\Dreambook\bin\Debug\EntityFramework.SqlServer.dll
+E:\Dreambook\Dreambook\bin\Debug\EntityFramework.xml
+E:\Dreambook\Dreambook\bin\Debug\EntityFramework.SqlServer.xml
+E:\Dreambook\Dreambook\obj\Debug\Dreambook.csprojResolveAssemblyReference.cache
+E:\Dreambook\Dreambook\obj\Debug\Dreambook.Asset_Function.AddDream.resources
+E:\Dreambook\Dreambook\obj\Debug\Dreambook.Dreambook.resources
+E:\Dreambook\Dreambook\obj\Debug\Dreambook.Properties.Resources.resources
+E:\Dreambook\Dreambook\obj\Debug\Dreambook.csproj.GenerateResource.Cache

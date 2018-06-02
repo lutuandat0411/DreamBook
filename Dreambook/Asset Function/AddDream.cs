@@ -19,16 +19,17 @@ namespace Dreambook.Asset_Function
 
         private void btnbtnAdd_Click(object sender, EventArgs e)
         {
-            DList addnew = new DList();
+            int sptphase = int.Parse(txtSplit.Text);
+            DreamList addnew = new DreamList();
             addnew.Name = txtName.Text;
             addnew.Target = txtTarget.Text;
-            addnew.Splitphase = Convert.ToInt32(txtSplit);
+            addnew.Splitphase = sptphase;
             addnew.DateCreated = dateTPBegin.Value;
             addnew.DateExpired = dateTPExpired.Value;
             try
             {
-                var db = new DreamDBEntities();
-                db.DLists.Add(addnew);
+                var db = new DreamDBEntities1();
+                db.DreamLists.Add(addnew);
                 db.SaveChanges();
             }
             catch (Exception ex)

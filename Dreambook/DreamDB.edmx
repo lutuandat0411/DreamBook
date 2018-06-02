@@ -4,57 +4,58 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="DreamDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <EntityType Name="DList">
+      <Schema Namespace="DreamDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="DreamList">
           <Key>
             <PropertyRef Name="idDream" />
           </Key>
           <Property Name="idDream" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="Target" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="DateCreated" Type="date" Nullable="false" />
+          <Property Name="DateCreated" Type="date" />
           <Property Name="DateExpired" Type="date" Nullable="false" />
           <Property Name="Splitphase" Type="int" Nullable="false" />
-          <Property Name="Status" Type="nvarchar" MaxLength="20" Nullable="false" />
+          <Property Name="Status" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityContainer Name="DreamDBModelStoreContainer">
-          <EntitySet Name="DList" EntityType="Self.DList" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DreamList" EntityType="Self.DreamList" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="DreamDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityContainer Name="DreamDBEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="DLists" EntityType="DreamDBModel.DList" />
-        </EntityContainer>
-        <EntityType Name="DList">
+      <Schema Namespace="DreamDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="DreamList">
           <Key>
             <PropertyRef Name="idDream" />
           </Key>
           <Property Name="idDream" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Target" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Target" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DateCreated" Type="DateTime" Precision="0" />
           <Property Name="DateExpired" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="Splitphase" Type="Int32" Nullable="false" />
-          <Property Name="Status" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
+        <EntityContainer Name="DreamDBEntities1" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="DreamLists" EntityType="Self.DreamList" />
+        </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="DreamDBModelStoreContainer" CdmEntityContainer="DreamDBEntities">
-          <EntitySetMapping Name="DLists">
-            <EntityTypeMapping TypeName="DreamDBModel.DList">
-              <MappingFragment StoreEntitySet="DList">
-                <ScalarProperty Name="Status" ColumnName="Status" />
-                <ScalarProperty Name="Splitphase" ColumnName="Splitphase" />
-                <ScalarProperty Name="DateExpired" ColumnName="DateExpired" />
-                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
-                <ScalarProperty Name="Target" ColumnName="Target" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
+        <EntityContainerMapping StorageEntityContainer="DreamDBModelStoreContainer" CdmEntityContainer="DreamDBEntities1">
+          <EntitySetMapping Name="DreamLists">
+            <EntityTypeMapping TypeName="DreamDBModel.DreamList">
+              <MappingFragment StoreEntitySet="DreamList">
                 <ScalarProperty Name="idDream" ColumnName="idDream" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Target" ColumnName="Target" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="DateExpired" ColumnName="DateExpired" />
+                <ScalarProperty Name="Splitphase" ColumnName="Splitphase" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
