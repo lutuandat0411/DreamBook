@@ -42,3 +42,4 @@ E:\Dreambook\Dreambook\obj\Debug\Dreambook.Asset_Function.AddDream.resources
 E:\Dreambook\Dreambook\obj\Debug\Dreambook.Dreambook.resources
 E:\Dreambook\Dreambook\obj\Debug\Dreambook.Properties.Resources.resources
 E:\Dreambook\Dreambook\obj\Debug\Dreambook.csproj.GenerateResource.Cache
+E:\Dreambook\Dreambook\obj\Debug\Dreambook.Asset_Function.EditDream.resources

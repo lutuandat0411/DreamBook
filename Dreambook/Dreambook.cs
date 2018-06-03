@@ -22,12 +22,18 @@ namespace Dreambook
         private void ShowDreamList()
         {
             var db = new DreamDBEntities1();
+            
             this.dtManage.DataSource = db.DreamLists.ToList();
             this.dtManage.Columns["idDream"].Visible = false;
             this.dtManage.Columns["status"].Visible = false;
+            this.dtHome.DataSource = db.DreamLists.ToList();
+            this.dtHome.Columns["idDream"].Visible = false;
+            this.dtHome.Columns["splitphase"].Visible = false;
+            this.dtHome.Columns["DateCreated"].Visible = false;
+            this.dtHome.Columns["DateExpired"].Visible = false;
         }
 
-        private void Dreambook_Load(object sender, EventArgs e, DreamList DreamList)
+        private void Dreambook_Load(object sender, EventArgs e)
         {
             this.ShowDreamList();
         }
@@ -66,12 +72,13 @@ namespace Dreambook
         {
             if (this.dtManage.SelectedRows.Count == 1)
             {
+                this.tabControl1.SelectedTab = tabDetail;
                 var row = this.dtManage.SelectedRows[0];
                 var item = (DreamList)row.DataBoundItem;
 
                 var form = new EditDream(item);
                 form.ShowDialog();
-                tabControl1.SelectTab(tabDetail);
+                this.tabControl1.SelectedTab = tabManage;
                 this.ShowDreamList();
             }
         }

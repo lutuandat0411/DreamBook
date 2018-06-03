@@ -48,10 +48,14 @@
             this.txtSplit = new System.Windows.Forms.TextBox();
             this.txtTarget = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
+            this.labeltext1 = new System.Windows.Forms.Label();
+            this.dtHome = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
+            this.tabHome.SuspendLayout();
             this.tabManage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtManage)).BeginInit();
             this.tabDetail.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtHome)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -68,6 +72,8 @@
             // 
             // tabHome
             // 
+            this.tabHome.Controls.Add(this.dtHome);
+            this.tabHome.Controls.Add(this.labeltext1);
             this.tabHome.Location = new System.Drawing.Point(4, 22);
             this.tabHome.Name = "tabHome";
             this.tabHome.Padding = new System.Windows.Forms.Padding(3);
@@ -250,6 +256,26 @@
             this.txtName.Size = new System.Drawing.Size(171, 20);
             this.txtName.TabIndex = 0;
             // 
+            // labeltext1
+            // 
+            this.labeltext1.AutoSize = true;
+            this.labeltext1.Location = new System.Drawing.Point(9, 23);
+            this.labeltext1.Name = "labeltext1";
+            this.labeltext1.Size = new System.Drawing.Size(0, 13);
+            this.labeltext1.TabIndex = 0;
+            // 
+            // dtHome
+            // 
+            this.dtHome.AllowUserToAddRows = false;
+            this.dtHome.AllowUserToDeleteRows = false;
+            this.dtHome.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtHome.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtHome.Location = new System.Drawing.Point(3, 3);
+            this.dtHome.Name = "dtHome";
+            this.dtHome.ReadOnly = true;
+            this.dtHome.Size = new System.Drawing.Size(535, 361);
+            this.dtHome.TabIndex = 1;
+            // 
             // Dreambook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -260,10 +286,13 @@
             this.Text = "Dreambook";
             this.Load += new System.EventHandler(this.Dreambook_Load);
             this.tabControl1.ResumeLayout(false);
+            this.tabHome.ResumeLayout(false);
+            this.tabHome.PerformLayout();
             this.tabManage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtManage)).EndInit();
             this.tabDetail.ResumeLayout(false);
             this.tabDetail.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtHome)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -289,5 +318,7 @@
         private System.Windows.Forms.Button btnbtnSave;
         private System.Windows.Forms.Button btnbtnBack;
         private System.Windows.Forms.Button btnRefresh;
+        private System.Windows.Forms.Label labeltext1;
+        private System.Windows.Forms.DataGridView dtHome;
     }
 }
